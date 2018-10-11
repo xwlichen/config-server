@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: /Users/lichen/Documents/WorkSpace/Config/
+
+#          /Users/lichen/Documents/WorkSpace/Config
+
+#          search-locations: classpath:/properties/

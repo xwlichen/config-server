@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    #本地
+    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: root
+    password: xw090704
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # spring-boot-starter-actuator 2.0版本以上得这么配置，将接口暴露出来，如果要暴露全部节点使用include: "*"
+        include: "*"
+
