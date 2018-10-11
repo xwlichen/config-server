@@ -17,13 +17,14 @@ spring:
       server:
         git:
           #服务器仓库地址
-          uri: https://github.com/xwlichen/config-server.git
+          uri: https://github.com/xwlichen/config-server
           #配置文件所在目录
-          search-paths: classpath:/properties/
+          search-paths: /blob/master/src/main/resources/properties/
+          username: xwlichen
+          password: xw090704
       #所在分支
       label: master
-      username: xwlichen
-      password: xw090704
+
 
 
 #          /Users/lichen/Documents/WorkSpace/Config
